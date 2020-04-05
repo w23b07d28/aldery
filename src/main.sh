@@ -1,8 +1,6 @@
-#!/bin/sh
-
-main() {
-    sudo xbps-install -y $(find ./src/programs -type f | sed 's!.*/!!' | tr '\n' ' ')
-}
+#!/bin/bash
 
 echo "Install programs.."
-main
+
+IFS=" " read -r -a programs <<< "$(find ./src/programs -type f | sed 's!.*/!!' | tr '\n' ' ')"
+sudo xbps-install -y "${programs[@]}"
