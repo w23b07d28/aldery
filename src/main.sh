@@ -7,4 +7,4 @@ sudo xbps-install -y "${programs[@]}"
 
 
 echo "Download dotfiles"
-git clone --bare https://github.com/balintkiraly/.dotfiles.git $HOME/.dotfiles
+git clone --bare https://github.com/balintkiraly/.dotfiles.git "$HOME/.dotfiles"
