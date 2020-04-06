@@ -1,4 +1,8 @@
-# VOPI
+
+![Logo](assets/logo.png)
+
+---
+
 VOPI is a script that autoinstalls and autoconfigures a fully-functioning environment for Void Linux.
 
 ## Usage
