@@ -14,17 +14,17 @@ do
   postinstall="${base_name}postinstall"
 
   # shellcheck disable=SC2086
-  [ -n "${!preinstall}" ] && ${!preinstall}
+  [ -n "${!preinstall}" ] && eval ${!preinstall}
 
   if [ -n "${!install}" ]; then
     # shellcheck disable=SC2086
-    ${!install}
+    eval ${!install}
   else
     sudo xbps-install -y "${package_name}"
   fi
 
   # shellcheck disable=SC2086
-  [ -n "${!postinstall}" ] && ${!postinstall}
+  [ -n "${!postinstall}" ] && eval ${!postinstall}
 
 done
 
