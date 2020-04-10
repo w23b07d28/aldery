@@ -27,7 +27,7 @@ do
   # shellcheck disable=SC2086
   [ -n "${!postinstall}" ] && eval ${!postinstall}
 
-  cd $BASEDIR || exit
+  cd "$BASEDIR" || exit
 done
 
 
