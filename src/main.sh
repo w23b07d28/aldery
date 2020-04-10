@@ -1,5 +1,6 @@
 #!/bin/bash
 source ./src/modules/yaml.sh
+BASEDIR=$(pwd)
 
 echo "Install programs.."
 
@@ -26,6 +27,7 @@ do
   # shellcheck disable=SC2086
   [ -n "${!postinstall}" ] && eval ${!postinstall}
 
+  cd "$BASEDIR" || exit
 done
 
 
