@@ -1,0 +1,2 @@
+install:
+  - git clone https://github.com/balintkiraly/st && cd st && sudo make install
