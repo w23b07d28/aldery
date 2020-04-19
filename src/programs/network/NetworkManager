@@ -1,0 +1,2 @@
+postinstall:
+  - bash src/helpers/NetworkManager/postinstall.sh
