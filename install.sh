@@ -8,7 +8,7 @@ cd /tmp/aldery/src || { echo "Failed to change directory."; exit 1; }
 
 # Run the installation script
 echo "Running the installation script..."
-bash ./main.sh || { echo "Failed to run the installation script."; exit 1; }
+bash ./src/main.sh || { echo "Failed to run the installation script."; exit 1; }
 
 # Remove the cloned repository from /tmp
 echo "Removing the cloned repository from /tmp..."
