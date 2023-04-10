@@ -2,6 +2,8 @@
 
 set -e # stop the script on the first error
 
+rm -rf /tmp/aldery
+
 # function to display an error message and exit the script
 error_exit() {
   echo "$1" >&2 # display the message on the standard error output
