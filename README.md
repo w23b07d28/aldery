@@ -1,5 +1,7 @@
 # Aldery
 
+![Logo](assets/logo.png)
+
 ## Introduction
 
 Aldery is a script designed to simplify the installation, configuration, and optimization of Fedora Linux. The script is intended to be used as a starting point for creating a new and improved Linux distribution, which may eventually be ported to other platforms such as Void.
