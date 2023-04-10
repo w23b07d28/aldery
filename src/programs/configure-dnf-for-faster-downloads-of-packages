@@ -1,0 +1,6 @@
+preinstall:
+  - bash src/helpers/configure-dnf-for-faster-downloads-of-packages/preinstall.sh
+install:
+  - bash src/helpers/configure-dnf-for-faster-downloads-of-packages/install.sh
+postinstall:
+  - bash src/helpers/configure-dnf-for-faster-downloads-of-packages/postinstall.sh
