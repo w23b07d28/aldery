@@ -26,8 +26,6 @@ This will automatically download and execute the installation script, which will
 
 ## Disclaimer
 
+The entire project is based on a mild fascination with a YAML parser written in Bash. The traversal logic is superb; it is quite enjoyable to experiment with unconventional techniques using Bash, and adhering to the POSIX shell standard is the optimal approach. Well, after all, you can use Ansible for that, right?
+
 Please note that Aldery is still in development and may not be suitable for use in production environments. The author takes no responsibility for any damages that may occur as a result of using this script. Use at your own risk.
-
-Also the entire project is based on a mild fascination with a YAML parser written in Bash. The traversal logic is superb; it is quite enjoyable to experiment with unconventional techniques using Bash, and adhering to the POSIX shell standard is the optimal approach.
-
-Well, after all, you can use Ansible for that, right?
