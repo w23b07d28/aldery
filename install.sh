@@ -2,8 +2,6 @@
 
 set -e # stop the script on the first error
 
-rm -rf /tmp/aldery
-
 # function to display an error message and exit the script
 error_exit() {
   echo "$1" >&2 # display the message on the standard error output
@@ -23,6 +21,8 @@ install_package() {
 }
 
 install_package git # install git
+
+rm -rf /tmp/aldery
 
 # clone the repository and run the installation
 echo "Cloning the Aldery repository and starting the installation..."
