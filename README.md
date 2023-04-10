@@ -26,6 +26,6 @@ This will automatically download and execute the installation script, which will
 
 ## Disclaimer
 
-The entire project is based on a mild fascination with a Bash script that reads a YAML file and creates variables. Just take a look at the person I forked this from. However, I strongly believe that Python is a superior choice for this scripting task. It is more organized, readable, and easier to manage than a Bash script. Nonetheless, this may be a subjective opinion, and it may not matter to anyone else but myself.
-
 Please note that Aldery is still in development and may not be suitable for use in production environments. The author takes no responsibility for any damages that may occur as a result of using this script. Use at your own risk.
+
+Also the entire project is based on a mild fascination with a YAML parser written in Bash. The traversal logic is superb; it is quite enjoyable to experiment with unconventional techniques using Bash, and adhering to the POSIX shell standard is the optimal approach. Well, after all, I could use Ansible for that, right?
