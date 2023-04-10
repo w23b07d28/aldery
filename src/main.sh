@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 source ./src/modules/yaml.sh
 BASEDIR=$(pwd)

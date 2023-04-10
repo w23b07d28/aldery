@@ -1,0 +1,6 @@
+preinstall:
+  - bash src/helpers/example/preinstall.sh
+install:
+  - bash src/helpers/example/install.sh
+postinstall:
+  - bash src/helpers/example/postinstall.sh

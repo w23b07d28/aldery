@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Remove any previous Aldery installation
 rm -rf /tmp/aldery
