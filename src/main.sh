@@ -31,6 +31,5 @@ do
   cd "$BASEDIR" || exit
 done
 
-
-#cho "Download dotfiles"
+#echo "Download dotfiles"
 #git clone --bare https://github.com/w23b07d28/dotfiles.git "$HOME/.dotfiles"
