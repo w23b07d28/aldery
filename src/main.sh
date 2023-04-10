@@ -22,7 +22,7 @@ do
     # shellcheck disable=SC2086
     eval ${!install}
   else
-    sudo xbps-install -y "${package_name}"
+    sudo dnf install -y "${package_name}"
   fi
 
   # shellcheck disable=SC2086
