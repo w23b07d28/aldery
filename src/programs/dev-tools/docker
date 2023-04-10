@@ -1,2 +1,0 @@
-postinstall:
-  - sudo usermod -G docker $USER && sudo ln -sf /etc/sv/docker /var/service/

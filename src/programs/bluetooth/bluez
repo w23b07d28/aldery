@@ -1,2 +1,0 @@
-postinstall:
-  - bash src/helpers/bluez/postinstall.sh

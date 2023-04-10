@@ -1,2 +1,0 @@
-install:
-  - git clone https://github.com/balintkiraly/slock && cd slock && sudo make install
