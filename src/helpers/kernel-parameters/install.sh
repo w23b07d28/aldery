@@ -29,4 +29,6 @@ sudo sed -i "/^GRUB_CMDLINE_LINUX_DEFAULT=/ s/=.*/=\"$ALL_PARAMS\"/" /etc/defaul
 # Update GRUB
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 
+echo "Added required parameters to /etc/default/grub"
+
 exit 0
