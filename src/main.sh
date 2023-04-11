@@ -3,22 +3,18 @@
 source ./src/modules/yaml.sh
 BASEDIR=$(pwd)
 
-# Enable RPM Fusion Repository
+# Update the system
+sudo dnf update -y
+sudo dnf upgrade -y
+
+# Enable RPM Fusion Repository, Flathub repository and Snaps.
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
 sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
-
-# Add Flathub Repository
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo -y
-
-# Enable snaps
 sudo dnf install snapd -y
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install core
 sudo snap refresh core
-
-# Update the system
-sudo dnf update -y
-sudo dnf upgrade -y
 
 # Install programs
 find ./src/programs -type f -print0 | while IFS= read -r -d $'\0' file; 
