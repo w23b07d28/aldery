@@ -1,0 +1,2 @@
+install:
+  - bash src/helpers/maza/install.sh
