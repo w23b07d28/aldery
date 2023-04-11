@@ -15,6 +15,8 @@ sudo dnf install snapd -y
 sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install core
 sudo snap refresh core
+sudo dnf install npm -y
+sudo npm install yarn -g
 
 # Install programs
 find ./src/programs -type f -print0 | while IFS= read -r -d $'\0' file; 
