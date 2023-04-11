@@ -7,6 +7,9 @@
 CONF_FILE="/etc/dnf/dnf.conf"
 CONF_OPTS=("max_parallel_downloads=10" "fastestmirror=true" "deltarpm=true")
 
+# Change ownership of the configuration file to the current user
+sudo chown "$USER" "$CONF_FILE"
+
 for OPT in "${CONF_OPTS[@]}"; do
     if ! grep -q "^${OPT}$" "$CONF_FILE"; then
         echo "$OPT" >> "$CONF_FILE"
