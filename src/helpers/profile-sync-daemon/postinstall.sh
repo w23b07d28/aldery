@@ -10,9 +10,6 @@ if [ ! -f /home/$USER/.config/psd/psd.conf ]; then
     psd
 fi
 
-# Edit psd configuration file
-sed -i 's/#BROWSERS/BROWSERS="firefox"/' /home/$USER/.config/psd/psd.conf
-
 # Enable and start psd service
-sudo systemctl --user enable psd.service
-sudo systemctl --user start psd.service
+systemctl --user enable psd.service
+systemctl --user start psd.service
