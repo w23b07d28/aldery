@@ -1,2 +1,2 @@
-Install:
+install:
   - sudo snap install notion-snap
