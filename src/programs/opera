@@ -1,2 +1,2 @@
 install:
-  - flatpak install flathub com.opera.Opera
+  - flatpak install flathub com.opera.Opera -y

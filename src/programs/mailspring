@@ -1,2 +1,2 @@
 install:
-  - flatpak install flathub com.getmailspring.Mailspring
+  - flatpak install flathub com.getmailspring.Mailspring -y
