@@ -1,2 +1,4 @@
+install:
+  - sudo dnf install tlp tlp-rdw -y
 postinstall:
   - sudo systemctl enable tlp.service && sudo tlp start
