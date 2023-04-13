@@ -1,0 +1,4 @@
+install:
+  - sudo fstrim --all
+postinstall:
+  - sudo systemctl enable fstrim.timer
