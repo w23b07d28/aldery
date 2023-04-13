@@ -1,2 +1,2 @@
 install:
-  - flatpak install flathub com.logseq.Logseq -y
+  - flatpak install flathub com.logseq.Logseq
