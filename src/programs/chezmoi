@@ -1,2 +1,0 @@
-install:
-  - sudo snap install chezmoi --classic
