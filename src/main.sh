@@ -3,6 +3,13 @@
 # Update the system
 sudo dnf update -y
 sudo dnf upgrade -y
+sudo dnf upgrade --refresh -y
+sudo dnf check -y
+sudo dnf autoremove -y
+sudo fwupdmgr get-devices -y
+sudo fwupdmgr refresh --force -y
+sudo fwupdmgr get-updates -y
+sudo fwupdmgr update -y
 
 # Modules
 source ./src/modules/repositories.sh
