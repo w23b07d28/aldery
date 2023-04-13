@@ -1,0 +1,2 @@
+postinstall:
+  - bash src/helpers/profile-sync-daemon/postinstall.sh
