@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # RPM Fusion free and nonfree repositories.
-sudo dnf install -y  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf upgrade --refresh -y
-sudo dnf groupupdate core -y
-sudo dnf install -y rpmfusion-free-release-tainted
-sudo dnf install -y dnf-plugins-core
+sudo dnf install -qy  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -qy https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf upgrade --refresh -qy
+sudo dnf groupupdate core -qy
+sudo dnf install -qy rpmfusion-free-release-tainted
+sudo dnf install -qy dnf-plugins-core
 
 # Flatpak is installed by default,
 # but one needs to enable the Flathub store.

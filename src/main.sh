@@ -1,5 +1,16 @@
 #!/usr/bin/env bash
 
+# Update system
+sudo dnf update --color=always -qy
+sudo dnf upgrade --color=always -qy
+sudo dnf upgrade --color=always --refresh -qy
+sudo dnf check --color=always -qy
+sudo dnf autoremove --color=always -qy
+sudo fwupdmgr get-devices -y
+sudo fwupdmgr refresh --force -y
+sudo fwupdmgr get-updates -y
+sudo fwupdmgr update -y
+
 source ./src/modules/repositories.sh
 source ./src/modules/yaml.sh
 BASEDIR=$(pwd)
