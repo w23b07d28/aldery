@@ -14,7 +14,7 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak update
 
 # Snap support.
-sudo dnf install -y snapd
+sudo dnf install -qy snapd
 sudo ln -s /var/lib/snapd/snap /snap # for classic snap support
 sudo snap install core
 sudo snap refresh core
