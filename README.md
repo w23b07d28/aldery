@@ -17,7 +17,7 @@ Specifically, the script automates the following tasks:
 * Enabling key repositories, including RPM Fusion, Flathub, and Snaps
 * Installing multimedia codecs for accessing various media formats
 * Customizing system settings for optimal performance
-* Install *some* apps
+* Installing *some* apps for daily use.
 
 ## Usage
 
