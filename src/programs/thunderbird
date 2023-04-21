@@ -1,2 +1,2 @@
 install:
-  - sudo dnf install thunderbird thunderbird-wayland -y
+  - sudo dnf install thunderbird -y
