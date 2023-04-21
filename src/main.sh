@@ -3,12 +3,12 @@
 #source ./src/modules/repositories.sh
 
 # RPM Fusion free and nonfree repositories
-sudo dnf install -y  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf upgrade --refresh -y
-sudo dnf groupupdate core -y
-sudo dnf install -y rpmfusion-free-release-tainted
-sudo dnf install -y dnf-plugins-core
+sudo dnf install -qy https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -qy https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf upgrade --refresh -qy
+sudo dnf groupupdate core -qy
+sudo dnf install -qy rpmfusion-free-release-tainted
+sudo dnf install -qy dnf-plugins-core
 
 # Flatpak is installed by default
 # but one needs to enable the Flathub store
@@ -23,11 +23,11 @@ sudo snap refresh core
 sudo snap refresh
 
 # Update system
-sudo dnf update -y
-sudo dnf upgrade -y
-sudo dnf upgrade --refresh -y
-sudo dnf check -y
-sudo dnf autoremove -y
+sudo dnf update -qy
+sudo dnf upgrade -qy
+sudo dnf upgrade --refresh -qy
+sudo dnf check -qy
+sudo dnf autoremove -qy
 sudo fwupdmgr get-devices -y
 sudo fwupdmgr refresh --force -y
 sudo fwupdmgr get-updates -y
