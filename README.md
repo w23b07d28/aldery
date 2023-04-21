@@ -2,19 +2,22 @@
 
 ![Logo](assets/logo.png)
 
-## Introduction
+## About
 
-Aldery is a script designed to simplify the installation, configuration, and optimization of Fedora Linux. The script is intended to be used as a starting point for creating a new and improved Linux distribution, which may eventually be ported to other platforms such as Void.
+Overall, Aldery is a simple tool for streamlining the post-installation, configuration, and optimization of Fedora Linux. Its automation capabilities and customization features make it an excellent starting point for creating customized Linux distributions with sets of scripts that can be easily adapted to other platforms.
+
+What will come out of this? I have no idea. From the point of view of some, it's just a slightly more in depth version of the typical .dotfiles.
 
 ## Features
 
-The Aldery script automates the following tasks:
+Specifically, the script automates the following tasks:
 
-* Installing and configuring essential packages
+* Updating and upgrading the system
+* Configuring DNF for faster package downloads
+* Enabling key repositories, including RPM Fusion, Flathub, and Snaps
+* Installing multimedia codecs for accessing various media formats
 * Customizing system settings for optimal performance
-* Removing unnecessary packages and files
-* Configuring the desktop environment
-* Applying security enhancements
+* Install *some* apps
 
 ## Usage
 
