@@ -5,7 +5,7 @@ rm -rf /tmp/aldery
 
 # Install Git
 echo "Installing Git..."
-sudo dnf install git -y
+sudo dnf install git --color=always -qy
 
 # Clone the Aldery repository to /tmp/aldery and run the installation script
 echo "Cloning the Aldery repository and starting the installation..."
