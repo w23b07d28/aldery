@@ -1,2 +1,2 @@
 install:
-  -  flatpak install flathub org.wezfurlong.wezterm
+  -  flatpak install -y --noninteractive flathub org.wezfurlong.wezterm

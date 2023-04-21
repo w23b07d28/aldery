@@ -1,2 +1,2 @@
 install:
-  - flatpak install flathub org.telegram.desktop
+  - flatpak install -y --noninteractive flathub org.telegram.desktop

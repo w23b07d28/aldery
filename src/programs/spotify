@@ -1,2 +1,2 @@
 install:
-  - flatpak install flathub com.spotify.Client
+  - flatpak install -y --noninteractive flathub com.spotify.Client
