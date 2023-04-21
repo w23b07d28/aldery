@@ -1,6 +1,28 @@
 #!/usr/bin/env bash
 
-# Update the system
+#source ./src/modules/repositories.sh
+
+# RPM Fusion free and nonfree repositories
+sudo dnf install -y  https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install -y https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf upgrade --refresh -y
+sudo dnf groupupdate core -y
+sudo dnf install -y rpmfusion-free-release-tainted
+sudo dnf install -y dnf-plugins-core
+
+# Flatpak is installed by default
+# but one needs to enable the Flathub store
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak update
+
+# Snap support
+sudo dnf install -y snapd
+sudo ln -s /var/lib/snapd/snap /snap # for classic snap support
+sudo snap install core
+sudo snap refresh core
+sudo snap refresh
+
+# Update system
 sudo dnf update -y
 sudo dnf upgrade -y
 sudo dnf upgrade --refresh -y
@@ -11,8 +33,6 @@ sudo fwupdmgr refresh --force -y
 sudo fwupdmgr get-updates -y
 sudo fwupdmgr update -y
 
-# Modules
-source ./src/modules/repositories.sh
 source ./src/modules/yaml.sh
 BASEDIR=$(pwd)
 
