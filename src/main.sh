@@ -42,5 +42,10 @@ do
   cd "$BASEDIR" || exit
 done
 
+# So that the script does not leave behind unnecessary garbage.
+[ -e ~/install.sh ] && rm ~/install.sh
+
 #echo "Download dotfiles"
 #git clone --bare https://github.com/w23b07d28/dotfiles.git "$HOME/.dotfiles"
+
+echo -e "\033[1m\033[32mEverything has been done. Don't sit too much in front of the computer and lift with a straight back from bent knees. Bye!\033[0m"
