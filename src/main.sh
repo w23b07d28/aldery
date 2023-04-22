@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 # Update system
+echo -e "\033[1m\033[32mWe've just moved on to the main script, so why not start by updating and upgrading your system.\033[0m"
+
 sudo dnf update --color=always -qy
 sudo dnf upgrade --color=always -qy
 sudo dnf upgrade --color=always --refresh -qy
@@ -11,11 +13,14 @@ sudo fwupdmgr refresh --force -y
 sudo fwupdmgr get-updates -y
 sudo fwupdmgr update -y
 
+echo -e "\033[1m\033[32mOkay, done. Now let's load the modules we need. That is, we want to have access to various repositories and the tool that makes this script work the way it does.\033[0m"
 source ./src/modules/repositories.sh
 source ./src/modules/yaml.sh
 BASEDIR=$(pwd)
 
 # Install programs
+echo -e "\033[1m\033[32mNow we will run all the other scripts.\033[0m"
+
 find ./src/programs -type f -print0 | while IFS= read -r -d $'\0' file; 
 do
   package_name=$(basename "$file")
@@ -43,6 +48,7 @@ do
 done
 
 # So that the script does not leave behind unnecessary garbage.
+echo -e "\033[1m\033[32mIt's almost there. I'll just clean up after myself yet.\033[0m"
 [ -e ~/install.sh ] && rm ~/install.sh
 
 #echo "Download dotfiles"
