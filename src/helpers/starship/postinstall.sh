@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Check if Bash is installed
 if ! command -v bash &> /dev/null; then
@@ -20,9 +20,9 @@ fi
 # Set the XDG_CONFIG_HOME environment variable if it is not set
 : ${XDG_CONFIG_HOME:="$HOME/.config"}
 
-# Add or move the starship init bash command to the end of $XDG_CONFIG_HOME/fish/config.fish
-if ! grep -q 'starship init bash | source' "$XDG_CONFIG_HOME/fish/config.fish" 2>/dev/null; then
-    echo 'starship init bash | source' >> "$XDG_CONFIG_HOME/fish/config.fish"
+# Add or move the starship init fish command to the end of $XDG_CONFIG_HOME/fish/config.fish
+if ! grep -q 'starship init fish | source' "$XDG_CONFIG_HOME/fish/config.fish" 2>/dev/null; then
+    echo 'starship init fish | source' >> "$XDG_CONFIG_HOME/fish/config.fish"
 fi
 
 echo "Starship configuration completed."
