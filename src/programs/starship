@@ -1,2 +1,4 @@
 preinstall:
   - sudo dnf -qy copr enable atim/starship
+  postinstall:
+  - bash src/helpers/starship/postinstall.sh
