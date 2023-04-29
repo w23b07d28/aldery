@@ -16,7 +16,7 @@ echo -e "\033[1m\033[32mIf one existed, it was deleted. Moving on.\033[0m"
 # Install Git
 echo -e "\033[1m\033[32mNow I will install git related packages so that I can run the script. They're probably already installed on your Fedora, but I'm coming from the Void Linux world and I preferred to keep it here just in case.\033[0m"
 
-sudo dnf install --color=always -qy git git-lfs gh
+sudo dnf install -qy git git-lfs gh
 
 echo -e "\033[1m\033[32mOkay, done.\033[0m"
 
