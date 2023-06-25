@@ -1,2 +1,2 @@
 install:
-    - flatpak install flathub io.github.seadve.Kooha
+    - flatpak install -y --noninteractive flathub io.github.seadve.Kooha
