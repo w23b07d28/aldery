@@ -1,2 +1,4 @@
+install:
+  - sudo dnf install firefox-wayland -y
 postinstall:
   - sudo dnf install gnome-browser-connector -y
